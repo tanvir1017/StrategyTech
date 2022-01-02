@@ -97,7 +97,7 @@
   margin-top: 100px;
 }
 .letest_tech_button_text {
-  margin: 8px 0px 0px 55px;
+  margin: 12px 0px 0px 75px;
   font-weight: 500;
   position: absolute;
   color: #6370e4;
@@ -122,4 +122,23 @@
 }
 .right_side_facts {
   border-top: 1px solid #bbbcbe;
+}
+
+/* our it suppport */
+.ourItService {
+  margin: 100px 0px;
+}
+.what_we_offer {
+  border-left: 3px solid #6d7bf5c4;
+}
+.what_we_offer small {
+  font-size: 18px;
+  color: #293072;
+}
+.what_we_offer_heading h1 {
+  font-size: 55px;
+  color: #293072;
+}
+.what_we_offer_heading p {
+  font-size: 22px;
 }

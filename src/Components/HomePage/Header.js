@@ -5,6 +5,7 @@ import About from "./About/About";
 import ClientSuccess from "./ClientSuccess/ClientSuccess";
 import "./Header.css";
 import LeatestTech from "./LeatestTech/LeatestTech";
+import OurITServices from "./OurITServices/OurITServices";
 
 const HomePage = () => {
   return (
@@ -49,6 +50,11 @@ const HomePage = () => {
       {/* Leatest success */}
       <div className="heading_background">
         <LeatestTech />
+      </div>
+
+      {/* Our It services */}
+      <div className="ourItService">
+        <OurITServices />
       </div>
     </>
   );
