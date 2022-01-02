@@ -138,7 +138,76 @@
 .what_we_offer_heading h1 {
   font-size: 55px;
   color: #293072;
+  margin-top: 10px;
+  margin-bottom: 12px;
 }
 .what_we_offer_heading p {
   font-size: 22px;
+  color: #6370e4;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+.nested_route {
+  position: relative;
+}
+.what_we_offer_nested_route {
+  margin-top: 40px;
+}
+.what_we_offer_nested_route a {
+  display: block;
+  text-decoration: none;
+  color: #293072;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: right;
+  transition: 0.4s;
+  padding: 7px;
+  margin-top: 7px;
+}
+.what_we_offer_nested_route a:nth-child(1) {
+  background-color: #6256ca;
+  color: white;
+  border-radius: 7px;
+}
+.what_we_offer_nested_route a:hover {
+  background-color: #6256ca;
+  color: white;
+  border-radius: 7px;
+}
+.what_we_offer_nested_route::before {
+  content: "";
+  position: absolute;
+  top: 240px;
+  left: 480px;
+  display: block;
+  width: 2px;
+  height: 380px;
+  background-color: #cfcfd4;
+}
+
+@media only screen and (max-width: 600px) {
+  .what_we_offer_nested_route {
+    margin-top: 10px;
+  }
+  .what_we_offer_nested_route a {
+    text-align: left;
+  }
+  .what_we_offer_nested_route a::before {
+    left: -10px;
+    top: 14px;
+  }
+  .what_we_offer_nested_route::before {
+    display: none;
+  }
+}
+
+/* Nested route components */
+.nested_components {
+  margin-left: 40px;
+}
+.nested_components_heading {
+  color: #293072;
+}
+.nested_components_text {
+  color: #645483;
 }

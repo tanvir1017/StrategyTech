@@ -4,6 +4,9 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import Blogs from "./Components/Blogs/Blogs";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import HomePage from "./Components/HomePage/Header";
+import Emergancy from "./Components/HomePage/OurITServices/NestedRoute/Emergancy";
+import RemoteOfficeSupport from "./Components/HomePage/OurITServices/NestedRoute/RemoteOfficeSupport";
+import OurITServices from "./Components/HomePage/OurITServices/OurITServices";
 import Navigation from "./Components/Navigation/Navigation";
 import NotFound from "./Components/NotFound/NotFound";
 import Services from "./Components/Services/Services";
@@ -15,10 +18,22 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<HomePage></HomePage>}></Route>
+          <Route path="/home" element={<HomePage></HomePage>}>
+            <Route path="/home" element={<Emergancy />}></Route>
+            <Route path="/home/e_support" element={<Emergancy />}></Route>
+            <Route
+              path="/home/r_o_support"
+              element={<RemoteOfficeSupport />}
+            ></Route>
+          </Route>
           <Route path="/services" element={<Services></Services>}></Route>
           <Route path="/contact_us" element={<ContactUs></ContactUs>}></Route>
           <Route path="/blogs" element={<Blogs></Blogs>}></Route>
           <Route path="/about_us" element={<AboutUs></AboutUs>}></Route>
+          <Route
+            path="/ourItServices"
+            element={<OurITServices></OurITServices>}
+          ></Route>
           <Route path="/*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>
