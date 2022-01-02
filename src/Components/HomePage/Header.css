@@ -41,3 +41,42 @@
   cursor: pointer;
   border-radius: 50%;
 }
+
+/* about component sytle */
+.heading_about_text {
+  font-size: 52px;
+}
+.about_us_heading {
+  margin-left: -40px;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .about_us_heading {
+    margin-left: -12px;
+    margin-top: 30px;
+  }
+}
+.about_us_row {
+  margin: 100px 0px;
+}
+.about_us_img {
+  border-radius: 15px;
+}
+
+/* CLient success */
+.ceo_section {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+.ceo_qoute h3 {
+  color: #6256ca;
+}
+.ceo_text {
+  margin-left: 10px;
+}
+.ceo_text h5 {
+  margin-bottom: 0px;
+}
+.ceo_text p {
+  color: #747ab3ad;
+}
