@@ -6,6 +6,7 @@ import ClientSuccess from "./ClientSuccess/ClientSuccess";
 import "./Header.css";
 import LeatestTech from "./LeatestTech/LeatestTech";
 import OurITServices from "./OurITServices/OurITServices";
+import SoftwareSolutions from "./SoftwareSolutions/SoftwareSolutions";
 
 const HomePage = () => {
   return (
@@ -55,6 +56,11 @@ const HomePage = () => {
       {/* Our It services */}
       <div className="ourItService">
         <OurITServices />
+      </div>
+
+      {/* Software solutions */}
+      <div className="ourItService">
+        <SoftwareSolutions />
       </div>
     </>
   );

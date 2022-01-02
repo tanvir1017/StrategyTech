@@ -1,3 +1,14 @@
+/* navigation */
+/* .navbar {
+  padding: 20px;
+} */
+.nav-item {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+/* heading */
 .heading_background {
   background-image: linear-gradient(180deg, #e9f8ff 0%, #f3f1fd 120.94%);
 }
@@ -54,6 +65,9 @@
   .about_us_heading {
     margin-left: -12px;
     margin-top: 30px;
+  }
+  .nav-item {
+    text-align: left;
   }
 }
 .about_us_row {
@@ -207,7 +221,42 @@
 }
 .nested_components_heading {
   color: #293072;
+  margin-bottom: 25px;
 }
 .nested_components_text {
   color: #645483;
+  margin-top: 10px;
+}
+
+/* software solutions components */
+.software_solutios_background {
+  background-image: url(../../images/bg-02.jpg);
+  background-size: cover;
+  height: 100 vh;
+  background-repeat: no-repeat;
+}
+.software_solutions_wrapper {
+  padding: 20px;
+}
+.software_solutions {
+  flex-wrap: wrap;
+  color: white;
+  padding: 70px;
+  border-radius: 15px;
+  background-color: #321075ce;
+}
+.software_solutions h3 {
+  font-size: 55px;
+  font-weight: 700;
+}
+.talk_to_us_btn {
+  background-color: white;
+  padding: 15px 45px;
+  font-weight: 600;
+  color: black;
+  transition: 0.4s;
+}
+.talk_to_us_btn:hover {
+  background-color: black;
+  color: white;
 }
