@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../images/imgs-fahim/404.svg';
+import img from '../../images/404.svg';
 
 const NotFound = () => {
     return (
