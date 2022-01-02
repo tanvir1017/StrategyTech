@@ -1,0 +1,43 @@
+.heading_background {
+  background-image: linear-gradient(180deg, #e9f8ff 0%, #f3f1fd 120.94%);
+}
+.heading_title {
+  font-weight: 600;
+  color: #293072;
+}
+.heading_title_border {
+  border-left: 3px solid #6d7bf5c4;
+}
+.heading_text_desc {
+  font-size: 19px;
+  font-weight: 600;
+  color: #6370e4;
+}
+
+.heading_text {
+  color: #293072;
+  font-size: 72px;
+}
+.heading_hover_button {
+  background-color: #293072;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 2px 4px 10px rgb(33 0 150 / 20%);
+  transition: 0.4s;
+}
+.heading_hover_button:hover {
+  background-color: #29307263;
+  transform: translateY(-6px);
+}
+.arrow_btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
