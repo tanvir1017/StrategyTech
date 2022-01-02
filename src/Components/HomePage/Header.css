@@ -64,6 +64,7 @@
 }
 
 /* CLient success */
+
 .ceo_section {
   margin-top: 30px;
   margin-left: 40px;
@@ -79,4 +80,46 @@
 }
 .ceo_text p {
   color: #747ab3ad;
+}
+
+/* leatest tech section */
+.letest_tech_button {
+  text-align: left;
+  position: relative;
+}
+.letest_tech_button img {
+  transform: rotate(90deg);
+  width: 50px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.our_strategy {
+  margin-top: 100px;
+}
+.letest_tech_button_text {
+  margin: 8px 0px 0px 55px;
+  font-weight: 500;
+  position: absolute;
+  color: #6370e4;
+}
+.left_side_facts h2 {
+  font-size: 62px;
+  font-weight: 700;
+  color: #293072;
+}
+.right_side_facts h2 {
+  font-size: 62px;
+  font-weight: 700;
+  color: #293072;
+}
+.right_side_corner h2 {
+  font-size: 62px;
+  font-weight: 700;
+  color: #293072;
+}
+.left_side_facts {
+  border-right: 1px solid #bbbcbe;
+}
+.right_side_facts {
+  border-top: 1px solid #bbbcbe;
 }
