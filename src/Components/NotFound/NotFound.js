@@ -1,9 +1,11 @@
 import React from 'react';
+import img from '../../images/imgs-fahim/404.svg';
 
 const NotFound = () => {
     return (
-        <div>
-            <h1>Page Not Found</h1>
+        <div className='text-center mt-3'>
+            <h1 className='text-muted'>Page Not Found</h1>
+            <img width='60%' src={img} alt="" /><br />
         </div>
     );
 };
