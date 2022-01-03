@@ -57,8 +57,8 @@ const Navigation = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link active" to="/signUp">
-                SignUp / Login
+              <Link class="nav-link active" to="/signup">
+                SignUp
               </Link>
             </li>
           </ul>
