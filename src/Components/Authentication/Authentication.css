@@ -1,0 +1,32 @@
+/* login page */
+.login_wrapper {
+  position: relative;
+}
+.login_body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  background-image: linear-gradient(120deg, #e9f8ff 0%, #f3f1fd 120.94%);
+  box-shadow: 2px 4px 10px rgba(33, 0, 150, 0.2);
+  padding: 40px;
+}
+.company_identity_login {
+  margin-bottom: 40px;
+}
+.company_identity_login h2 {
+  color: #293072;
+}
+.authentication_btn button {
+  padding: 10px 35px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #293072;
+  box-shadow: 2px 4px 10px rgba(33, 0, 150, 0.2);
+  transition: 0.2s;
+}
+.authentication_btn button:hover {
+  color: white;
+  transform: translateY(-2px);
+}

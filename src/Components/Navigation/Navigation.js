@@ -5,7 +5,10 @@ import "../HomePage/Header.css";
 
 const Navigation = () => {
   return (
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light header">
+    <nav
+      class="
+     navbar-expand-lg sticky-top navbar-light bg-light header"
+    >
       <div class="container d-flex justify-content-between">
         <Link class="navbar-brand" to="/">
           <img src={logo} alt="" />
@@ -24,7 +27,7 @@ const Navigation = () => {
         <div class="collapse navbar-collapse me-auto" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to="/">
+              <Link class="nav-link active" to="/">
                 Home
               </Link>
             </li>
@@ -44,13 +47,13 @@ const Navigation = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link active" to="/services">
-                Services
+              <Link class="nav-link active" to="/courses">
+                Courses
               </Link>
             </li>{" "}
             <li class="nav-item">
-              <Link class="nav-link active" to="/contact_us">
-                Contact Us
+              <Link class="nav-link active" to="/signup">
+                SignUp
               </Link>
             </li>
           </ul>
