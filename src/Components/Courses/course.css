@@ -121,3 +121,34 @@
   margin-top: -5px;
   font-weight: 700;
 }
+.enroll_btn {
+  margin-bottom: -10px;
+}
+.enroll_btn button {
+  background-color: #293072;
+  padding: 10px 35px;
+  border: 15px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 2px 4px 10px rgba(107, 85, 185, 0.2);
+  transition: 0.4s;
+}
+.enroll_btn button:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+.price {
+  font-size: 40px;
+  font-weight: 800;
+  color: #293072;
+  text-align: right;
+}
+.course_description {
+  margin-top: 30px;
+}
+.course_description p {
+  font-size: 40px;
+  font-weight: 800;
+  color: #293072;
+  margin-bottom: -10px;
+}
