@@ -1,0 +1,44 @@
+.order_card_wrapper {
+  padding: 10px;
+  height: 310px;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #f3f1fd;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.order_card_body {
+  position: relative;
+}
+.order_card_details div {
+  background: hsla(233, 82%, 57%, 0.47);
+}
+.order_card_details span {
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+}
+.order_details_img {
+  width: 20px;
+}
+.order_card_wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(107, 85, 185, 0.15);
+}
+.order_card_wrapper_img {
+  border-radius: 15px;
+}
+.order_card_body {
+  padding: 5px;
+}
+.order_course_title {
+  color: #6256ca;
+  font-size: 18px;
+  font-weight: 700;
+}
+.special_class_right {
+  border-bottom-right-radius: 7px;
+}
+.special_class_left {
+  border-bottom-left-radius: 7px;
+}

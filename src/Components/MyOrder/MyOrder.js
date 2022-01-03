@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row } from "react-bootstrap";
 import useAuth from "../hooks/useAuth";
+import "./MyOrder.css";
 import MyOrderCard from "./MyOrderCard";
 
 const MyOrder = () => {
@@ -12,22 +12,20 @@ const MyOrder = () => {
         `https://enigmatic-fjord-94198.herokuapp.com/users?email=${user.email}`
       );
       const data = await res.json();
-
       setOrders(data);
-
       console.log(data);
     };
     order();
   }, [user.email]);
 
   return (
-    <Container>
-      <Row>
+    <div className="container">
+      <div className="row">
         {orders.map((order) => (
           <MyOrderCard key={order._id} order={order} />
         ))}
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 };
 

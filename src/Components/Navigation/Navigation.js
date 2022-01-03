@@ -8,15 +8,15 @@ const Navigation = () => {
   const { user, logOut } = useAuth();
   return (
     <nav
-      class="
+      className="
      navbar-expand-lg sticky-top navbar-light bg-light header"
     >
-      <div class="container d-flex justify-content-between">
-        <Link class="navbar-brand" to="/">
+      <div className="container d-flex justify-content-between">
+        <Link className="navbar-brand" to="/">
           <img src={logo} alt="" />
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -24,58 +24,62 @@ const Navigation = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse me-auto" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <Link class="nav-link active" to="/">
+        <div
+          className="collapse navbar-collapse me-auto"
+          id="navbarNavDropdown"
+        >
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/">
                 Home
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link active" to="/courses">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/courses">
                 Courses
               </Link>
             </li>{" "}
-            <li class="nav-item">
-              <Link class="nav-link active" to="/about_us">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/about_us">
                 About us
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link active" to="/blogs">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/blogs">
                 Blogs
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link active" to="/">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/">
                 Pages
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link active" to="/myorders">
+            <li className="nav-item">
+              <Link className="nav-link active" to="/myorders">
                 My Order
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link active" to="/contact_us">
-                Contact Us
-              </Link>
-            </li>
-            <li class="nav-item">
-              {user?.email ?
-                <div style={{ display: 'flex' }}>
-                  <p>{user.displayName}</p>
-                  <button class="nav-link active" onClick={logOut}>
-                    logout
-                  </button>
+            <li className="nav-item">
+              {user?.email ? (
+                <div style={{ display: "flex" }}>
+                  <p className="nav-link active ">
+                    <i className="fas fa-user"></i> {user.displayName}
+                  </p>
+                  <p
+                    className="nav-link active"
+                    style={{ cursor: "pointer" }}
+                    onClick={logOut}
+                  >
+                    logout <i className="fas fa-sign-out-alt"></i>
+                  </p>
                 </div>
-
-                :
-                <Link class="nav-link active" to="/signup">
-                  SignUp
-                </Link>}
+              ) : (
+                <Link className="nav-link active" to="/signup">
+                  <i className="fas fa-sign-out-alt"></i> SignUp/Logoin
+                </Link>
+              )}
             </li>
           </ul>
         </div>

@@ -6,7 +6,7 @@ import logo from "../../images/logo.svg";
 const Footer = () => {
   return (
     <Row className="g-0 p-5">
-      <Col md={2} sm={12} lg={2}>
+      <Col md={2} sm={12} lg={2} className="text-start">
         <ul>
           <h4 className="mb-4 text-muted">COMPANY</h4>
 
@@ -16,7 +16,7 @@ const Footer = () => {
           <li className="mb-2 fs-6 ">Careers</li>
         </ul>
       </Col>
-      <Col md={2} sm={12} lg={2}>
+      <Col md={2} sm={12} lg={2} className="text-start">
         <ul>
           <h4 className="mb-4 text-muted">HELP</h4>
 
@@ -25,7 +25,7 @@ const Footer = () => {
           <li className="mb-2 fs-6 ">Legal & Privacy</li>
         </ul>
       </Col>
-      <Col md={3} sm={12} lg={3}>
+      <Col md={3} sm={12} lg={3} className="text-start">
         <ul>
           <h4 className="mb-4 text-muted">SERVICES</h4>
 
@@ -36,7 +36,7 @@ const Footer = () => {
           <li className="mb-2 fs-6 ">Cloud configuration</li>
         </ul>
       </Col>
-      <Col md={5} sm={12} lg={5}>
+      <Col md={5} sm={12} lg={5} className="text-start">
         <ul>
           <img className="mb-4" src={logo} alt="" />
 
@@ -48,22 +48,22 @@ const Footer = () => {
           <li>
             <ul className="d-flex p-0">
               <li className="me-4 fs-4 mt-3">
-                <i class="fab fa-linkedin-in"></i>
+                <i className="fab fa-linkedin-in"></i>
               </li>
               <li className="me-4 fs-4 mt-3">
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </li>
               <li className="me-4 fs-4 mt-3">
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </li>
               <li className="me-4 fs-4 mt-3">
-                <i class="fab fa-snapchat-ghost"></i>
+                <i className="fab fa-snapchat-ghost"></i>
               </li>
             </ul>
           </li>
         </ul>
       </Col>
-      <Col sm={12} className="mt-4">
+      <Col sm={12} className="mt-4 text-start">
         <p>&copy; 2022 StrategyTech. All Rights Reserved.</p>
         <p>
           Get professional IT consulting services about IT management, custom
