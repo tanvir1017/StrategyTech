@@ -16,36 +16,37 @@ const CourseDetails = () => {
 
   useEffect(() => {
     const run = async () => {
-      const res = await fetch(`https://enigmatic-fjord-94198.herokuapp.com/courses/${coursesId}`)
-      const data = await res.json()
-      setCourse(data)
-    }
-    run()
-  }, [coursesId])
+      const res = await fetch(
+        `https://enigmatic-fjord-94198.herokuapp.com/courses/${coursesId}`
+      );
+      const data = await res.json();
+      setCourse(data);
+    };
+    run();
+  }, [coursesId]);
 
   //save to database
   const handleSendData = () => {
-
     const body = {
       email: user.email,
       img: course.course_img,
-      name: course.course_subjects
-    }
+      name: course.course_subjects,
+    };
 
-    fetch('http://localhost:5000/users', {
-      method: 'POST',
+    fetch("https://enigmatic-fjord-94198.herokuapp.com/users", {
+      method: "POST",
       headers: {
-        'content-type': 'application/json'
+        "content-type": "application/json",
       },
-      body: JSON.stringify(body)
+      body: JSON.stringify(body),
     })
-      .then(res => res.json())
-      .then(data => {
+      .then((res) => res.json())
+      .then((data) => {
         if (data.insertedId) {
-          alert('successfully enrolled')
+          alert("successfully enrolled");
         }
-      })
-  }
+      });
+  };
 
   return (
     <>
@@ -55,9 +56,7 @@ const CourseDetails = () => {
             <div className="col-lg-7 col-md-7 col-sm-12   instructor_intro_and_course_details text-start">
               <div className="course_intro">
                 <p>{course.course_subjects}</p>
-                <small>
-                  {course.course_title}
-                </small>
+                <small>{course.course_title}</small>
               </div>
               <div className="instructor_intro">
                 <p>Instructor</p>
@@ -87,7 +86,11 @@ const CourseDetails = () => {
             {/* right side course banner */}
             <div className="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
               <div className="course_banner_and_price text-center">
-                <img className="img-fluid w-100" src={course.course_img} alt="img" />
+                <img
+                  className="img-fluid w-100"
+                  src={course.course_img}
+                  alt="img"
+                />
                 {/* course enroll */}
                 <div className="course_enroll_time mt-3 d-flex justify-content-around align-items-center">
                   <div className="course_enroll d-flex text-start">
@@ -123,7 +126,9 @@ const CourseDetails = () => {
                           src={mark}
                           alt=""
                         />
-                        <span className="ms-2 fw-bold">{course.course_quiz}+ Quizes</span>
+                        <span className="ms-2 fw-bold">
+                          {course.course_quiz}+ Quizes
+                        </span>
                       </div>
                     </div>
                     <div className=" col-lg-6 col-md-6 col-12 mt-2">
@@ -141,7 +146,9 @@ const CourseDetails = () => {
                           src={mark}
                           alt=""
                         />
-                        <span className="ms-2 fw-bold">{course.course_video}+ Videos</span>
+                        <span className="ms-2 fw-bold">
+                          {course.course_video}+ Videos
+                        </span>
                       </div>
                     </div>
                   </div>

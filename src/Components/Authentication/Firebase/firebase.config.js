@@ -1,9 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyC7TX8IyBwbL0trtK0zZ2cRBV2bOFh-VVY",
-    authDomain: "master-8233a.firebaseapp.com",
-    projectId: "master-8233a",
-    storageBucket: "master-8233a.appspot.com",
-    messagingSenderId: "954156011792",
-    appId: "1:954156011792:web:79ba60ec20d35585c85595"
+  apiKey: "AIzaSyCGhzHAtz6gvOF-n0G-0EG0mNa2COVqacU",
+  authDomain: "strategy-tech.firebaseapp.com",
+  projectId: "strategy-tech",
+  storageBucket: "strategy-tech.appspot.com",
+  messagingSenderId: "49226118292",
+  appId: "1:49226118292:web:3531edd73850a88337b081",
 };
 export default firebaseConfig;
