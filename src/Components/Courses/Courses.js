@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import course_img from "../../images/online_school_4x.png";
+import Footer from "../Footer/Footer";
 import Course from "./Course";
 import "./course.css";
 
@@ -56,6 +57,7 @@ const Services = () => {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

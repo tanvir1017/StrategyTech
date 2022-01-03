@@ -107,9 +107,17 @@
   border-radius: 15px;
 }
 .course_enroll img {
-  width: 50px;
-  background-color: #a1a4c97c;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 .user_about p {
+  font-size: 12px;
   margin-bottom: 0px;
+  color: #293072;
+  font-weight: 600;
+}
+.user_about small {
+  margin-top: -5px;
+  font-weight: 700;
 }

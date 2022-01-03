@@ -8,7 +8,6 @@ import Blogs from "./Components/Blogs/Blogs";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import CourseDetails from "./Components/Courses/CourseDetails";
 import Courses from "./Components/Courses/Courses";
-import Footer from "./Components/Footer/Footer";
 import HomePage from "./Components/HomePage/Header";
 import Emergancy from "./Components/HomePage/OurITServices/NestedRoute/Emergancy";
 import RemoteOfficeSupport from "./Components/HomePage/OurITServices/NestedRoute/RemoteOfficeSupport";
@@ -39,7 +38,6 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route exact path="*" element={<NotFound />}></Route>
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

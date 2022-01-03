@@ -1,6 +1,7 @@
 import React from "react";
 import arrow_icon from "../../images/arrow.gif";
 import itCounsulting from "../../images/person-01.png";
+import Footer from "../Footer/Footer";
 import About from "./About/About";
 import ClientSuccess from "./ClientSuccess/ClientSuccess";
 import "./Header.css";
@@ -62,6 +63,9 @@ const HomePage = () => {
       <div className="ourItService">
         <SoftwareSolutions />
       </div>
+
+      {/* footer */}
+      <Footer></Footer>
     </>
   );
 };
