@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import Login from "./Components/Authentication/Login";
-import Signup from "./Components/Authentication/Signup";
+import Signup from "./Components/Authentication/SignUp";
 import Blogs from "./Components/Blogs/Blogs";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Courses from "./Components/Courses/Courses";
