@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.svg";
 import "../HomePage/Header.css";
+import useAuth from "../hooks/useAuth";
 
 const Navigation = () => {
+  const { user, logOut } = useAuth();
   return (
     <nav
       class="
@@ -52,9 +54,18 @@ const Navigation = () => {
               </Link>
             </li>{" "}
             <li class="nav-item">
-              <Link class="nav-link active" to="/signup">
-                SignUp
-              </Link>
+              {user?.email ?
+                <div style={{ display: 'flex' }}>
+                  <p>{user.displayName}</p>
+                  <button class="nav-link active" onClick={logOut}>
+                    logout
+                  </button>
+                </div>
+
+                :
+                <Link class="nav-link active" to="/signup">
+                  SignUp
+                </Link>}
             </li>
           </ul>
         </div>
