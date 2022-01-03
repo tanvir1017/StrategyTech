@@ -29,10 +29,11 @@ const Footer = () => {
                 <ul>
                     <h4 className='mb-4 text-muted' >SERVICES</h4>
 
-                    <li className='mb-2 fs-6 '>About</li>
-                    <li className='mb-2 fs-6 '>How it works</li>
-                    <li className='mb-2 fs-6 '>Customers</li>
-                    <li className='mb-2 fs-6 '>Careers</li>
+                    <li className='mb-2 fs-6 '>Emergency support</li>
+                    <li className='mb-2 fs-6 '>Remote office support</li>
+                    <li className='mb-2 fs-6 '>Network administration</li>
+                    <li className='mb-2 fs-6 '>Office systems</li>
+                    <li className='mb-2 fs-6 '>Cloud configuration</li>
                 </ul>
             </Col>
             <Col md={5} sm={12} lg={5}>
