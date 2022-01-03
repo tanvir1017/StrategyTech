@@ -173,28 +173,27 @@ const CourseDetails = () => {
           <p>Course Description</p>
           <hr />
           <small>
-            Do you want to see your child speak Code fluently in the classroom?
-            Or do you just want to take your little one a step further in the
-            future? If your answer is yes then this course is for you. Spoken
-            Code plays a very important role in academic life in classroom or
-            co-curricular activities, which also affects college and job
-            applications. In everyday life, talking to foreigners, traveling or
-            going abroad to study, in each case, the need to speak Code with
-            confidence is much greater. If you want your youngest member of the
-            family to succeed in life in the future with his or her ability to
-            communicate in Code, this course is for those young people. With a
-            keen sense of humor, excellent educational qualifications and many
-            years of teaching experience, Munjerin Shahid will serve as an ideal
-            teacher to enhance your child's spoken Code skills. In this course
-            Munjerin Shahid's Guidance promises to help your child overcome the
-            fear of speaking Code and help him to speak Code fluently more
-            easily. The course contains 35 fun videos so that the little ones
-            can have fun. There are also 35 flashcards that will help you
-            remember previous lessons, 35 interactive quizzes that will help you
-            understand their progress, and 35 notes that will keep a record of
-            what they read. So enroll in the course today to help your little
-            girl take a step forward in learning to speak Code fluently and
-            confidently.
+            Do you want to see your child Code fluently in the classroom? Or do
+            you just want to take your little one a step further in the future?
+            If your answer is yes then this course is for you. Spoken Code plays
+            a very important role in academic life in classroom or co-curricular
+            activities, which also affects college and job applications. In
+            everyday life, talking to foreigners, traveling or going abroad to
+            study, in each case, the need to Code with confidence is much
+            greater. If you want your youngest member of the family to succeed
+            in life in the future with his or her ability to communicate in
+            Code, this course is for those young people. With a keen sense of
+            humor, excellent educational qualifications and many years of
+            teaching experience, Munjerin Shahid will serve as an ideal teacher
+            to enhance your child's spoken Code skills. In this course Munjerin
+            Shahid's Guidance promises to help your child overcome the fear of
+            ing Code and help him to Code fluently more easily. The course
+            contains 35 fun videos so that the little ones can have fun. There
+            are also 35 flashcards that will help you remember previous lessons,
+            35 interactive quizzes that will help you understand their progress,
+            and 35 notes that will keep a record of what they read. So enroll in
+            the course today to help your little girl take a step forward in
+            learning to Code fluently and confidently.
           </small>
         </div>
       </div>
