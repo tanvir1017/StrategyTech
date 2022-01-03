@@ -54,7 +54,7 @@ const Footer = () => {
                 </ul>
             </Col>
             <Col sm={12} className='mt-4' >
-                <p>© 2022 StrategyTech. All Rights Reserved.</p>
+                <p>&copy; 2022 StrategyTech. All Rights Reserved.</p>
                 <p>Get professional IT consulting services about IT management, custom software and website development to improve your business or start your own IT project. Read our pages to learn more about the IT consulting we offer to companies like yours.</p>
             </Col>
         </Row>
