@@ -1,8 +1,7 @@
-.header{
-  padding:15px 0;
+.header {
+  padding: 15px 0;
   backdrop-filter: blur(10px);
 }
-
 
 .nav-item {
   font-size: 18px;
