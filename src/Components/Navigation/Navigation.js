@@ -5,8 +5,8 @@ import "../HomePage/Header.css";
 
 const Navigation = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light header">
+      <div class="container d-flex justify-content-between">
         <Link class="navbar-brand" to="/">
           <img src={logo} alt="" />
         </Link>
@@ -21,7 +21,7 @@ const Navigation = () => {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse me-auto" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
               <Link class="nav-link active" aria-current="page" to="/">

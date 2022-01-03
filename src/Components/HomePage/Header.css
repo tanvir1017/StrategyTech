@@ -1,7 +1,9 @@
-/* navigation */
-/* .navbar {
-  padding: 20px;
-} */
+.header{
+  padding:15px 0;
+  backdrop-filter: blur(10px);
+}
+
+
 .nav-item {
   font-size: 18px;
   font-weight: 500;
