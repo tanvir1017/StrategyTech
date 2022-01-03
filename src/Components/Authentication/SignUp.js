@@ -6,12 +6,12 @@ import "./Authentication.css";
 const Signup = () => {
   return (
     <div className="container">
-      <div className="row login_wrapper">
+      <div className="row login_wrapper ">
         {/* Useless columns */}
         <div className="col-lg-3 col-md-3 col-12"></div>
         {/* Useless columns */}
-        <div className="col-lg-6 col-md-6 col-12  login_body">
-          <div className="company_identity_login">
+        <div className="col-lg-6 col-md-6 col-12 text-center login_body">
+          <div className="company_identity_login ">
             <img src={logo} alt="" />
             <h2>Make an account</h2>
           </div>

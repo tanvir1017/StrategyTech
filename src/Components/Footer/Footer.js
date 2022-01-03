@@ -5,7 +5,7 @@ import logo from "../../images/logo.svg";
 
 const Footer = () => {
   return (
-    <Row className="g-0  p-5">
+    <Row className="g-0 p-5">
       <Col md={2} sm={12} lg={2}>
         <ul>
           <h4 className="mb-4 text-muted">COMPANY</h4>
