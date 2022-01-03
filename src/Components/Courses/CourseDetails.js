@@ -1,4 +1,5 @@
 import React from "react";
+import users from "../../images/users_icon.png";
 import "./course.css";
 
 const CourseDetails = () => {
@@ -38,9 +39,24 @@ const CourseDetails = () => {
             </small>
           </div>
         </div>
-        <div className="col-lg-1 col-md-1 col-sm-12"></div>
-        <div className="col-lg-4 col-md-4 col-sm-12">
-          <h2>cousr price and img</h2>
+
+        <div className="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
+          <div className="course_banner_and_price text-center">
+            <img
+              className="img-fluid w-100"
+              src="https://static.vecteezy.com/system/resources/previews/003/015/024/non_2x/school-online-educational-course-banner-vector.jpg"
+              alt=""
+            />
+            <div className="course_enroll_time mt-3">
+              <div className="course_enroll d-flex text-start">
+                <img src={users} alt="" />
+                <div className="user_about">
+                  <p>Doing the course</p>
+                  <small>16,138</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

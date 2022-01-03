@@ -97,3 +97,19 @@
   font-size: 16px;
   font-weight: 400;
 }
+/* course_banner_and_price */
+.course_banner_and_price {
+  border: 2px solid #abb1ee;
+  border-radius: 15px;
+  padding: 15px;
+}
+.course_banner_and_price img {
+  border-radius: 15px;
+}
+.course_enroll img {
+  width: 50px;
+  background-color: #a1a4c97c;
+}
+.user_about p {
+  margin-bottom: 0px;
+}
