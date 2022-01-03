@@ -35,7 +35,7 @@
 }
 .card_wrapper:hover {
   transform: translateY(-2px);
-  box-shadow: 2px 4px 10px rgba(107, 85, 185, 0.2);
+  box-shadow: 2px 4px 10px rgba(107, 85, 185, 0.32);
 }
 .card_wrapper img {
   border-radius: 15px;

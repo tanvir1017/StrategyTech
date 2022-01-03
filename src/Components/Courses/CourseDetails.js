@@ -211,7 +211,7 @@ const CourseDetails = () => {
             <div className="col-12"></div>
           </div>
         </div>
-        <div className="course_description container">
+        <div className="course_description container text-start">
           <p>Course Description</p>
           <hr />
           <small>
