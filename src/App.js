@@ -6,6 +6,7 @@ import Login from "./Components/Authentication/Login";
 import Signup from "./Components/Authentication/SignUp";
 import Blogs from "./Components/Blogs/Blogs";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import CourseDetails from "./Components/Courses/CourseDetails";
 import Courses from "./Components/Courses/Courses";
 import Footer from "./Components/Footer/Footer";
 import HomePage from "./Components/HomePage/Header";
@@ -29,6 +30,7 @@ function App() {
           ></Route>
         </Route>
         <Route path="/courses" element={<Courses />}></Route>
+        <Route path="/courses_details" element={<CourseDetails />}></Route>
         <Route path="/contact_us" element={<ContactUs />}></Route>
         <Route path="/blogs" element={<Blogs />}></Route>
         <Route path="/about_us" element={<AboutUs />}></Route>
