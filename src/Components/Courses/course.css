@@ -1,0 +1,99 @@
+.course_banner {
+  background-image: linear-gradient(180deg, #e9f8ff 0%, #f3f1fd 120.94%);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  padding: 10px;
+}
+.mission_border {
+  position: relative;
+}
+.mission_border p {
+  color: #293072;
+  font-weight: 400;
+  margin-left: 30px;
+}
+.mission_border::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  width: 7px;
+  height: 45px;
+  background-color: #9ea8ff;
+}
+/* card design */
+.card_wrapper {
+  padding: 10px;
+  height: 270px;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #f3f1fd;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.card_wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 4px 10px rgba(107, 85, 185, 0.2);
+}
+.card_wrapper img {
+  border-radius: 15px;
+}
+.course_title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .card_wrapper {
+    margin-top: 5px;
+  }
+}
+
+/* course details or dynamic course component */
+.instructor_intro_and_course_details {
+  padding: 20px;
+  background-color: rgba(204, 202, 216, 0.308);
+}
+.course_intro p {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.course_intro small {
+  font-size: 16px;
+  font-weight: 400;
+}
+.instructor_intro {
+  margin-top: 20px;
+}
+.instructor_intro p {
+  font-size: 27px;
+
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.instructor_intro img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+}
+
+.instructor_bio p {
+  color: #293072;
+  margin-bottom: 0px;
+}
+.course_certificate {
+  margin-top: 20px;
+}
+.course_certificate p {
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.course_certificate small {
+  font-size: 16px;
+  font-weight: 400;
+}

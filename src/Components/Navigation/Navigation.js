@@ -32,6 +32,11 @@ const Navigation = () => {
               </Link>
             </li>
             <li class="nav-item">
+              <Link class="nav-link active" to="/courses">
+                Courses
+              </Link>
+            </li>{" "}
+            <li class="nav-item">
               <Link class="nav-link active" to="/about_us">
                 About us
               </Link>
@@ -47,6 +52,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li class="nav-item">
+<<<<<<< HEAD
               <Link class="nav-link active" to="/courses">
                 Courses
               </Link>
@@ -54,6 +60,15 @@ const Navigation = () => {
             <li class="nav-item">
               <Link class="nav-link active" to="/signup">
                 Login / SignUp
+=======
+              <Link class="nav-link active" to="/contact_us">
+                Contact Us
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link active" to="/signUp">
+                SignUp / Login
+>>>>>>> design_ui
               </Link>
             </li>
           </ul>
