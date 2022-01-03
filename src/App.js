@@ -5,6 +5,7 @@ import Login from "./Components/Authentication/Login";
 import SignUp from "./Components/Authentication/SignUp";
 import Blogs from "./Components/Blogs/Blogs";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import CourseDetails from "./Components/Courses/CourseDetails";
 import Courses from "./Components/Courses/Courses";
 import HomePage from "./Components/HomePage/Header";
 import Emergancy from "./Components/HomePage/OurITServices/NestedRoute/Emergancy";
@@ -28,13 +29,14 @@ function App() {
               element={<RemoteOfficeSupport />}
             ></Route>
           </Route>
-          <Route path="/courses" element={<Courses></Courses>}></Route>
-          <Route path="/contact_us" element={<ContactUs></ContactUs>}></Route>
-          <Route path="/blogs" element={<Blogs></Blogs>}></Route>
-          <Route path="/about_us" element={<AboutUs></AboutUs>}></Route>
+          <Route path="/courses" element={<Courses />}></Route>
+          <Route path="/contact_us" element={<ContactUs />}></Route>
+          <Route path="/course_details" element={<CourseDetails />}></Route>
+          <Route path="/blogs" element={<Blogs />}></Route>
+          <Route path="/about_us" element={<AboutUs />}></Route>
           <Route path="/ourItServices" element={<OurITServices />}></Route>
-          <Route path="/logIn" element={<Login></Login>}></Route>
-          <Route path="/signUp" element={<SignUp></SignUp>}></Route>
+          <Route path="/logIn" element={<Login />}></Route>
+          <Route path="/signUp" element={<SignUp />}></Route>
           <Route path="/*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>

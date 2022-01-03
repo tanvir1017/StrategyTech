@@ -29,6 +29,11 @@ const Navigation = () => {
               </Link>
             </li>
             <li class="nav-item">
+              <Link class="nav-link active" to="/courses">
+                Courses
+              </Link>
+            </li>{" "}
+            <li class="nav-item">
               <Link class="nav-link active" to="/about_us">
                 About us
               </Link>
@@ -43,11 +48,6 @@ const Navigation = () => {
                 Pages
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link active" to="/courses">
-                Courses
-              </Link>
-            </li>{" "}
             <li class="nav-item">
               <Link class="nav-link active" to="/contact_us">
                 Contact Us
