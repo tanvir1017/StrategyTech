@@ -1,5 +1,5 @@
 
-import { getAuth, createUserWithEmailAndPassword, signOut, onAuthStateChanged, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, updateProfile } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeFirebase from "../Authentication/Firebase/firebase.init";
 
@@ -95,6 +95,7 @@ const useFirebase = () => {
             .then((result) => {
 
                 const user = result.user;
+                setUser(user)
                 // saveUser(user.email, user.displayName, 'PUT')
                 setAuthError('');
                 const destination = location?.state?.from || '/';

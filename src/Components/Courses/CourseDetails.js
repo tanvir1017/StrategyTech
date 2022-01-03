@@ -5,20 +5,48 @@ import mark from "../../images/mark.png";
 import time from "../../images/time.png";
 import users from "../../images/users_icon.png";
 import Footer from "../Footer/Footer";
+import useAuth from "../hooks/useAuth";
 import "./course.css";
 
 const CourseDetails = () => {
   const { coursesId } = useParams();
   const [course, setCourse] = useState({});
 
+  const { user } = useAuth();
+
   useEffect(() => {
     const run = async () => {
-      fetch(`https://enigmatic-fjord-94198.herokuapp.com/courses/${coursesId}`)
-        .then(res => res.json())
-        .then(data => setCourse(data))
+      const res = await fetch(`https://enigmatic-fjord-94198.herokuapp.com/courses/${coursesId}`)
+      const data = await res.json()
+      setCourse(data)
     }
     run()
   }, [coursesId])
+
+  //save to database
+  const handleSendData = () => {
+
+    const body = {
+      email: user.email,
+      img: course.course_img,
+      name: course.course_subjects
+    }
+
+    fetch('http://localhost:5000/users', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(body)
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.insertedId) {
+          alert('successfully enrolled')
+        }
+      })
+  }
+
   return (
     <>
       <div className="mb-5">
@@ -157,7 +185,7 @@ const CourseDetails = () => {
                   </div>
                   <div className="price">$ {course.cours_amount}</div>
                   <div className="enroll_btn mt-3 ">
-                    <button className="btn ">
+                    <button className="btn" onClick={handleSendData}>
                       Get access{" "}
                       <img
                         className="img-fluid"

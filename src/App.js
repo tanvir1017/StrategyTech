@@ -13,6 +13,7 @@ import HomePage from "./Components/HomePage/Header";
 import Emergancy from "./Components/HomePage/OurITServices/NestedRoute/Emergancy";
 import RemoteOfficeSupport from "./Components/HomePage/OurITServices/NestedRoute/RemoteOfficeSupport";
 import OurITServices from "./Components/HomePage/OurITServices/OurITServices";
+import MyOrder from "./Components/MyOrder/MyOrder";
 import Navigation from "./Components/Navigation/Navigation";
 import NotFound from "./Components/NotFound/NotFound";
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/courses_details/:coursesId" element={<CourseDetails />}></Route>
           <Route path="/contact_us" element={<ContactUs />}></Route>
           <Route path="/blogs" element={<Blogs />}></Route>
+          <Route path="/myorders" element={<MyOrder />}></Route>
           <Route path="/about_us" element={<AboutUs />}></Route>
           <Route path="/ourItServices" element={<OurITServices />}></Route>
           <Route path="/signup" element={<Signup />}></Route>
