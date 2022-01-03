@@ -7,7 +7,7 @@ import "./course.css";
 const Services = () => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
-    fetch("./fakedb.json")
+    fetch("https://enigmatic-fjord-94198.herokuapp.com/courses")
       .then((res) => res.json())
       .then((data) => {
         setCourses(data);

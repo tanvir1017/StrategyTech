@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import arrow from "../../images/arrow.png";
 import mark from "../../images/mark.png";
 import time from "../../images/time.png";
@@ -7,6 +8,17 @@ import Footer from "../Footer/Footer";
 import "./course.css";
 
 const CourseDetails = () => {
+  const { coursesId } = useParams();
+  const [course, setCourse] = useState({});
+
+  useEffect(() => {
+    const run = async () => {
+      fetch(`https://enigmatic-fjord-94198.herokuapp.com/courses/${coursesId}`)
+        .then(res => res.json())
+        .then(data => setCourse(data))
+    }
+    run()
+  }, [coursesId])
   return (
     <>
       <div className="mb-5">
@@ -14,10 +26,9 @@ const CourseDetails = () => {
           <div className="row ">
             <div className="col-lg-7 col-md-7 col-sm-12   instructor_intro_and_course_details text-start">
               <div className="course_intro">
-                <p>Kid's Coding</p>
+                <p>{course.course_subjects}</p>
                 <small>
-                  Teach your kids how to code in every daily life scenario with
-                  fun and easy tutorials!
+                  {course.course_title}
                 </small>
               </div>
               <div className="instructor_intro">
@@ -48,11 +59,7 @@ const CourseDetails = () => {
             {/* right side course banner */}
             <div className="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center">
               <div className="course_banner_and_price text-center">
-                <img
-                  className="img-fluid w-100"
-                  src="https://static.vecteezy.com/system/resources/previews/003/015/024/non_2x/school-online-educational-course-banner-vector.jpg"
-                  alt=""
-                />
+                <img className="img-fluid w-100" src={course.course_img} alt="img" />
                 {/* course enroll */}
                 <div className="course_enroll_time mt-3 d-flex justify-content-around align-items-center">
                   <div className="course_enroll d-flex text-start">
@@ -66,7 +73,7 @@ const CourseDetails = () => {
                     <img src={time} alt="" />
                     <div className="user_about">
                       <p>Hard work needed</p>
-                      <small>20 hours</small>
+                      <small>{course.course_duration}</small>
                     </div>
                   </div>
                 </div>
@@ -88,7 +95,7 @@ const CourseDetails = () => {
                           src={mark}
                           alt=""
                         />
-                        <span className="ms-2 fw-bold">70 Quizes</span>
+                        <span className="ms-2 fw-bold">{course.course_quiz}+ Quizes</span>
                       </div>
                     </div>
                     <div className=" col-lg-6 col-md-6 col-12 mt-2">
@@ -106,7 +113,7 @@ const CourseDetails = () => {
                           src={mark}
                           alt=""
                         />
-                        <span className="ms-2 fw-bold">100+ Sheets</span>
+                        <span className="ms-2 fw-bold">{course.course_video}+ Videos</span>
                       </div>
                     </div>
                   </div>
@@ -148,7 +155,7 @@ const CourseDetails = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="price">$ 450</div>
+                  <div className="price">$ {course.cours_amount}</div>
                   <div className="enroll_btn mt-3 ">
                     <button className="btn ">
                       Get access{" "}

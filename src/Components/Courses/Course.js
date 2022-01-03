@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Course = ({ course }) => {
-  const { course_title, course_img, instructor_name1 } = course;
+  const { course_title, course_img, instructor_name1, _id } = course;
   return (
-    <div className="col-lg-3 col-md-3 col-12 ">
+    <div className="col-lg-3 col-md-3 col-12">
       <div className="card_wrapper mb-3 ">
-        <Link to="/courses_details">
+        <Link to={`/courses_details/${_id}`} >
           <img className="img-fluid w-100" src={course_img} alt="" />
         </Link>
         <div className="card_body ps-2 text-start">
