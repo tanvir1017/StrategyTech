@@ -20,10 +20,9 @@ const Footer = () => {
                 <ul>
                     <h4 className='mb-4 text-muted' >HELP</h4>
 
-                    <li className='mb-2 fs-6 '>About</li>
-                    <li className='mb-2 fs-6 '>How it works</li>
-                    <li className='mb-2 fs-6 '>Customers</li>
-                    <li className='mb-2 fs-6 '>Careers</li>
+                    <li className='mb-2 fs-6 '>Contact us</li>
+                    <li className='mb-2 fs-6 '>FAQ</li>
+                    <li className='mb-2 fs-6 '>Legal & Privacy</li>
                 </ul>
             </Col>
             <Col md={3} sm={12} lg={3}>
