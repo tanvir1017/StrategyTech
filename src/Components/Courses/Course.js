@@ -6,7 +6,7 @@ const Course = ({ course }) => {
   return (
     <div className="col-lg-3 col-md-3 col-12 ">
       <div className="card_wrapper mb-3 ">
-        <Link to="/course_details">
+        <Link to="/courseDetails">
           <img className="img-fluid w-100" src={course_img} alt="" />
         </Link>
         <div className="card_body ps-2 text-start">
