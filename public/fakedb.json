@@ -32,5 +32,39 @@
     "course_img": "",
     "course_description": "Something going to be added",
     "cours_amount": 400
+  },
+  {
+    "course_title": "C# for absolute beginers",
+    "instructor_name1": "MD Rakibul Islam",
+    "instructor_name2": "Saiful islam fahim",
+    "instructor_img1": "",
+    "instructor_img2": "",
+    "instructor_edu1": "BSC IN CSE",
+    "instructor_edu2": "BSC IN CSE",
+    "course_duration": "72 hourse",
+    "course_video": 808,
+    "course_quiz": 150,
+    "course_subjects": "C# microsoft",
+    "course_solved": 402,
+    "course_img": "",
+    "course_description": "Something going to be added",
+    "cours_amount": 400
+  },
+  {
+    "course_title": "C# for absolute beginers",
+    "instructor_name1": "MD Rakibul Islam",
+    "instructor_name2": "Saiful islam fahim",
+    "instructor_img1": "",
+    "instructor_img2": "",
+    "instructor_edu1": "BSC IN CSE",
+    "instructor_edu2": "BSC IN CSE",
+    "course_duration": "72 hourse",
+    "course_video": 808,
+    "course_quiz": 150,
+    "course_subjects": "C# microsoft",
+    "course_solved": 402,
+    "course_img": "",
+    "course_description": "Something going to be added",
+    "cours_amount": 400
   }
 ]

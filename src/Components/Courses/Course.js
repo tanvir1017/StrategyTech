@@ -1,9 +1,10 @@
 import React from "react";
 
-const Course = () => {
+const Course = ({ course }) => {
+  const { course_title } = course;
   return (
-    <div>
-      <h2>Course</h2>
+    <div className="col-lg-3 col-md-3 col-12">
+      <h2>{course_title}</h2>
     </div>
   );
 };

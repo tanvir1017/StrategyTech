@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Course from "./Course";
 
 const Services = () => {
   const [courses, setCourses] = useState([]);
@@ -11,8 +12,12 @@ const Services = () => {
       });
   }, []);
   return (
-    <div>
-      <h2>Courses aviable {courses.length}</h2>
+    <div className="container">
+      <div className="row">
+        {courses.map((course) => (
+          <Course key={course._id} course={course}></Course>
+        ))}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import Login from "./Components/Authentication/Login";
+import SignUp from "./Components/Authentication/SignUp";
 import Blogs from "./Components/Blogs/Blogs";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Courses from "./Components/Courses/Courses";
@@ -30,10 +32,9 @@ function App() {
           <Route path="/contact_us" element={<ContactUs></ContactUs>}></Route>
           <Route path="/blogs" element={<Blogs></Blogs>}></Route>
           <Route path="/about_us" element={<AboutUs></AboutUs>}></Route>
-          <Route
-            path="/ourItServices"
-            element={<OurITServices></OurITServices>}
-          ></Route>
+          <Route path="/ourItServices" element={<OurITServices />}></Route>
+          <Route path="/logIn" element={<Login></Login>}></Route>
+          <Route path="/signUp" element={<SignUp></SignUp>}></Route>
           <Route path="/*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>

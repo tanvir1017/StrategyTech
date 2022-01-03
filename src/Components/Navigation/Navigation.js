@@ -53,6 +53,11 @@ const Navigation = () => {
                 Contact Us
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link active" to="/signUp">
+                SignUp / Login
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
