@@ -3,9 +3,9 @@ import "../Header.css";
 
 const LeatestTech = () => {
   return (
-    <div className="container p-5">
+    <div className="container">
       <div className="container">
-        <div className="row about_us_row">
+        <div className="row about_us_row py-5">
           <div className="col-lg-7 col-md-7 col-12 about_us_heading">
             <div className="heading_title text-start">
               <p>

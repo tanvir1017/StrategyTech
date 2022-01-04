@@ -70,6 +70,9 @@
   .nav-item {
     text-align: left;
   }
+  .about_us_img {
+    margin-top: 20px;
+  }
 }
 .about_us_row {
   margin: 100px 0px;
@@ -214,12 +217,16 @@
   .what_we_offer_nested_route::before {
     display: none;
   }
+  .nested_components {
+    margin-left: -2px !important;
+  }
 }
 
 /* Nested route components */
 .nested_components {
   margin-left: 40px;
 }
+
 .nested_components_heading {
   color: #293072;
   margin-bottom: 25px;
