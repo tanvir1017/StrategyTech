@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import loader from "../../images/Loader.gif";
 import logo from "../../images/logo.svg";
 import useAuth from "../hooks/useAuth";
 import "./Authentication.css";
@@ -78,6 +79,11 @@ const Login = () => {
               </div>
             </form>
           )}
+          {isLoading && (
+            <div>
+              <img className="img-fluid w-50" src={loader} alt="" />
+            </div>
+          )}
           <div className="authentication_btn mt-3"></div>
         </div>
 
@@ -85,11 +91,6 @@ const Login = () => {
         <div className="col-lg-3 col-md-3 col-12"></div>
         {/* Useless columns */}
       </div>
-      {isLoading && (
-        <div className="spinner-border" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </div>
-      )}
     </div>
   );
 };
