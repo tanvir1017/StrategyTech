@@ -110,5 +110,21 @@
     "course_enroll": 1000,
     "cours_amount": 400,
     "course_description": "This online local area network course will give you an in-depth look at Local Area Networks and the OSI Model. Local area networks (LAN) are computer networks that range in size from a few computers in a single office to hundreds of devices across several buildings. With this course, learn about Local area network key features such as how they link computers together and provide shared access to printers, file servers, and other services."
+  },
+  {
+    "instructor_name": "Yusuf Khabbani",
+    "instructor_img": "https://i.ibb.co/8d75PbY/instructor-06.png",
+    "instructor_education": "MS (CSE), University of IUBI (bd); BA, MA (CSE), University of kingstone;",
+    "course_img": "https://i.ibb.co/1JHjg4C/course-09.png",
+    "course_title": "Let's protect the internet with the help of Ethical hacking. We are here to guide your path",
+    "course_subject": "Ethical Hacking",
+    "course_durations": 72,
+    "course_videos": 808,
+    "course_quizes": 150,
+    "course_projects": 10,
+    "course_questions": "1k",
+    "course_enroll": 1000,
+    "cours_amount": 400,
+    "course_description": "This online local area network course will give you an in-depth look at Local Area Networks and the OSI Model. Local area networks (LAN) are computer networks that range in size from a few computers in a single office to hundreds of devices across several buildings. With this course, learn about Local area network key features such as how they link computers together and provide shared access to printers, file servers, and other services."
   }
 ]
