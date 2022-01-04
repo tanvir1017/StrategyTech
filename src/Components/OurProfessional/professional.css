@@ -1,0 +1,24 @@
+.professional_body img {
+  border-radius: 15px;
+}
+.professional_body_text h3 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: #293072;
+}
+.professional_body_text p {
+  margin-top: 0px;
+  color: #323449;
+  font-weight: 500;
+  font-size: 18px;
+}
+.professional_slogan {
+  margin-bottom: 50px;
+}
+.position_area i {
+  background: #293072;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 7px 15px;
+}

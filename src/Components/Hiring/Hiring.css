@@ -1,0 +1,44 @@
+.hiring_banner {
+  background-image: linear-gradient(180deg, #e9f8ff 0%, #f3f1fd 120.94%);
+  padding: 50px 0px;
+  margin: 100px 0px;
+}
+.hiring_section_text h2 {
+  color: #293072;
+  font-size: 55px;
+  font-weight: 700;
+}
+.hiring_section_text p {
+  color: #3c406d;
+  font-size: 20px;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.get_in_touch {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  transition: 0.4s;
+  box-shadow: 2px 4px 10px rgb(33 0 150 / 20%);
+  cursor: pointer;
+}
+.get_in_touch:hover {
+  transform: translateY(-2px);
+}
+.get_in_touch i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  background-color: #293072;
+  padding: 10px;
+  color: white;
+  border-radius: 50%;
+}
+.get_in_touch_text {
+  font-size: 18px;
+  color: #3c406d;
+  margin-left: 25px;
+}
