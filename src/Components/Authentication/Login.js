@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import loader from "../../images/Loader.gif";
 import logo from "../../images/logo.svg";
 import useAuth from "../hooks/useAuth";
@@ -9,7 +9,8 @@ const Login = () => {
   const [loginData, setLoginData] = useState({});
   const { loginUser, isLoading, authError, signinWithGoogle } = useAuth();
   const location = useLocation();
-  // const history = useHistory();
+  const navigate = useNavigate();
+
   const handleOnChange = (e) => {
     const fied = e.target.name;
     const value = e.target.value;
@@ -18,11 +19,11 @@ const Login = () => {
     setLoginData(newLoginData);
   };
   const handleLogin = (e) => {
-    loginUser(loginData.email, loginData.password, location);
+    loginUser(loginData.email, loginData.password, location, navigate);
     e.preventDefault();
   };
   const handleGoogleSignIn = () => {
-    signinWithGoogle(location);
+    signinWithGoogle(location, navigate);
   };
   return (
     <div className="container">

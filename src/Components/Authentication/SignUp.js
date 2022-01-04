@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import loader from "../../images/Loader.gif";
 import logo from "../../images/logo.svg";
 import useAuth from "../hooks/useAuth";
@@ -7,8 +7,9 @@ import "./Authentication.css";
 
 const Signup = () => {
   const [loginData, setLoginData] = useState({});
-  // const history = useHistory();
-  const { registerUser, isLoading, handleGoogleSignIn, authError } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation()
+  const { registerUser, isLoading, signinWithGoogle, authError } = useAuth();
 
   const handleOnBlur = (e) => {
     const fied = e.target.name;
@@ -18,15 +19,18 @@ const Signup = () => {
 
     setLoginData(newLoginData);
   };
+
   const handleLogin = (e) => {
     if (loginData.password !== loginData.password2) {
       alert("password did not match");
       return;
     }
-    registerUser(loginData.email, loginData.password, loginData.name);
+    registerUser(loginData.email, loginData.password, loginData.name, navigate);
 
     e.preventDefault();
   };
+
+
   return (
     <div className="container">
       <div className="row login_wrapper ">
@@ -88,7 +92,7 @@ const Signup = () => {
               </div>
               <div className="authentication_btn">
                 <button className="btn me-2">Sign up</button>
-                <button className="btn ms-2" onClick={handleGoogleSignIn}>
+                <button className="btn ms-2" onClick={() => signinWithGoogle(location, navigate)}>
                   {" "}
                   <img
                     className="img-fluid"

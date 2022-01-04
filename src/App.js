@@ -15,6 +15,7 @@ import OurITServices from "./Components/HomePage/OurITServices/OurITServices";
 import MyOrder from "./Components/MyOrder/MyOrder";
 import Navigation from "./Components/Navigation/Navigation";
 import NotFound from "./Components/NotFound/NotFound";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -38,7 +39,16 @@ function App() {
             ></Route>
 
             <Route path="/blogs" element={<Blogs />}></Route>
-            <Route path="/myorders" element={<MyOrder />}></Route>
+
+            {/* private Route */}
+            <Route path="/myorders"
+              element={
+                <PrivateRoute>
+                  <MyOrder />
+                </PrivateRoute>
+              }
+            ></Route>
+
             <Route path="/about_us" element={<AboutUs />}></Route>
             <Route path="/ourItServices" element={<OurITServices />}></Route>
             <Route path="/signup" element={<Signup />}></Route>

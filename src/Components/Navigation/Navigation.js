@@ -72,12 +72,12 @@ const Navigation = () => {
                     style={{ cursor: "pointer" }}
                     onClick={logOut}
                   >
-                    logout <i className="fas fa-sign-out-alt"></i>
+                    Logout <i className="fas fa-sign-out-alt"></i>
                   </p>
                 </div>
               ) : (
                 <Link className="nav-link active" to="/signup">
-                  <i className="fas fa-sign-out-alt"></i> SignUp/Logoin
+                  <i className="fas fa-sign-out-alt"></i> SignUp
                 </Link>
               )}
             </li>
