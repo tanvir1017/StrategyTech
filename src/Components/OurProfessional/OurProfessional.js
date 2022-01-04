@@ -14,6 +14,15 @@ const OurProfessional = () => {
   return (
     <div className="container">
       <div className="row">
+        <div className="col-md-10">
+          <div className="our_story_heading text-start">
+            <span className="me-3 our_story_heading_span"></span>
+            <small>MEET OUR PROFESSIONAL</small>
+            <h2 className="mt-4 professional_slogan">
+              We want to improve your business
+            </h2>
+          </div>
+        </div>
         {professional.map((data) => (
           <Professional key={data._id} data={data}></Professional>
         ))}

@@ -5,6 +5,7 @@ import reply from "../../images/reply.jpg";
 import sender from "../../images/sender.jpg";
 import watch from "../../images/time.png";
 import Footer from "../Footer/Footer";
+import Hiring from "../Hiring/Hiring";
 import OurProfessional from "../OurProfessional/OurProfessional";
 import "./AboutUs.css";
 
@@ -123,6 +124,9 @@ const AboutUs = () => {
 
       {/* Our Professional */}
       <OurProfessional />
+      {/* Our Professional */}
+      {/* Our Professional */}
+      <Hiring />
       {/* Our Professional */}
       {/* footer */}
       <Footer />
