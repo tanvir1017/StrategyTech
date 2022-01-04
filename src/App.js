@@ -35,13 +35,18 @@ function App() {
             <Route path="/courses" element={<Courses />}></Route>
             <Route
               path="/courses_details/:coursesId"
-              element={<CourseDetails />}
+              element={
+                <PrivateRoute>
+                  <CourseDetails />
+                </PrivateRoute>
+              }
             ></Route>
 
             <Route path="/blogs" element={<Blogs />}></Route>
 
             {/* private Route */}
-            <Route path="/myorders"
+            <Route
+              path="/myorders"
               element={
                 <PrivateRoute>
                   <MyOrder />

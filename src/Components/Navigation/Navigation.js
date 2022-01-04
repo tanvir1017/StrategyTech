@@ -43,16 +43,6 @@ const Navigation = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" to="/blogs">
-                  Blogs
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/">
-                  Pages
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link active" to="/myorders">
                   My Order
                 </Link>

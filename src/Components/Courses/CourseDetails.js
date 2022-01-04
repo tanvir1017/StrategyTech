@@ -30,7 +30,11 @@ const CourseDetails = () => {
     const body = {
       email: user.email,
       img: course.course_img,
-      name: course.course_subjects,
+      name: course.course_subject,
+      quizes: course.course_quizes,
+      videos: course.course_videos,
+      projects: course.course_projects,
+      questions: course.course_questions,
     };
 
     fetch("https://enigmatic-fjord-94198.herokuapp.com/users", {
@@ -63,7 +67,7 @@ const CourseDetails = () => {
                 <div className="d-flex justify-content-around align-items-center">
                   <img
                     className="img-fluid"
-                    src="https://image.shutterstock.com/image-photo/young-woman-glasses-working-office-260nw-519963472.jpg"
+                    src={course.instructor_img}
                     alt=""
                   />
                   <div className="instructor_bio">
