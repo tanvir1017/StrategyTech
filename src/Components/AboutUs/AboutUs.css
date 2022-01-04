@@ -87,6 +87,20 @@
   left: -15px;
   border: 2px solid #293072;
 }
+.glassdoor_text {
+  color: #293072;
+  font-size: 25px;
+  font-weight: 800;
+}
+.average_text {
+  color: #293072;
+  font-size: 18px;
+  font-weight: 400;
+}
+.star i {
+  color: #293072;
+  font-size: 30px;
+}
 @media only screen and (max-width: 600px) {
   .massege_card_wrapper .sender_photo {
     border-radius: 50%;

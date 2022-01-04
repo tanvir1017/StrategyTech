@@ -68,6 +68,19 @@ const AboutUs = () => {
                   In sem lorem. Mauris metus velit, porttitorio vel est
                   ultrices, vehicula tincidunt.
                 </p>
+                <div className="star my-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div className="mb-3">
+                  <span className="glassdoor_text">Glassdoor </span>{" "}
+                  <span className="average_text">
+                    Average rating (as Dec 29, 2020)
+                  </span>
+                </div>
               </div>
             </div>
             <div className="col-lg-7 col-md-7 col-sm-12">
