@@ -63,7 +63,6 @@ const useFirebase = () => {
   };
 
   //observe user state
-
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -78,15 +77,11 @@ const useFirebase = () => {
 
   // logout
   const logOut = () => {
-    setIsLoading(true);
     signOut(auth)
       .then(() => {
-        // Sign-out successful.
+        alert('successfully logout')
+        setUser({})
       })
-      .catch((error) => {
-        // An error happened.
-      })
-      .finally(() => setIsLoading(false));
   };
 
   //login with google
@@ -96,36 +91,17 @@ const useFirebase = () => {
       .then((result) => {
         const user = result.user;
         setUser(user);
-        // saveUser(user.email, user.displayName, 'PUT')
         setAuthError("");
         const destination = location?.state?.from || "/";
         navigate(destination);
       })
       .catch((error) => {
-        setAuthError(error.email);
+        setAuthError(error.message);
       })
 
       .finally(() => setIsLoading(false));
   };
-  // const saveUser = (email, displayName, method) => {
-  //     const user = { email, displayName };
-  //     fetch('http://localhost:5000/users', {
-  //         method: method,
-  //         headers: {
-  //             'content-type': 'application/json'
-  //         },
-  //         body: JSON.stringify(user)
-  //     })
-  //         .then()
 
-  // }
-
-  // useEffect(() => {
-  //     fetch(`http://localhost:5000/users/${user.email}`)
-  //         .then(res => res.json())
-  //         .then(data => setAdmin(data.admin))
-
-  // }, [user.email])
   return {
     user,
     registerUser,
