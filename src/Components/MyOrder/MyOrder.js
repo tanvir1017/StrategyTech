@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import img from '../../images/order.gif';
 import useAuth from "../hooks/useAuth";
 import "./MyOrder.css";
 import MyOrderCard from "./MyOrderCard";
@@ -21,15 +23,21 @@ const MyOrder = () => {
 
   return (
     <div className="container">
-      <div className="row">
-        {orders.map((order) => (
-          <MyOrderCard
-            key={order._id}
-            order={order}
-            setNum={setNum}
-          />
-        ))}
-      </div>
+      {
+        orders.length > 0 ? <div className="row">
+          {orders.map((order) => (
+            <MyOrderCard
+              key={order._id}
+              order={order}
+              setNum={setNum}
+            />
+          ))}
+        </div> : <div>
+          <img src={img} alt="" />
+          <h2>Sorry, You have no order yet!</h2>
+          <Link to='/courses'>Please Go To some order</Link>
+        </div>
+      }
     </div>
   );
 };
