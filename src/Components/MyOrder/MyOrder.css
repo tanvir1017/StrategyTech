@@ -42,3 +42,20 @@
 .special_class_left {
   border-bottom-left-radius: 7px;
 }
+.enroll_btn button {
+  background-color: #293072;
+  padding: 10px 35px;
+  border: 15px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 2px 4px 10px rgba(107, 85, 185, 0.2);
+  transition: 0.4s;
+}
+.enroll_btn button a {
+  text-decoration: none;
+  color: white;
+}
+.enroll_btn button:hover {
+  color: white;
+  transform: translateY(-2px);
+}
