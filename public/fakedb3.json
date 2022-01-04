@@ -1,0 +1,38 @@
+[
+  {
+    "_id": 1,
+    "name": "RICARDO COOPER",
+    "position": "Co-Founder and CSO",
+    "img": "https://ld-wt73.template-help.com/tf/strategytech/images/team-member-01-390x487.jpg"
+  },
+  {
+    "_id": 2,
+    "name": "LESLIE HOWARD",
+    "position": "SVP of engineering",
+    "img": "https://ld-wt73.template-help.com/tf/strategytech/images/team-member-02-390x487.jpg"
+  },
+  {
+    "_id": 3,
+    "name": "JORGE EDWARDS",
+    "position": "VP of sales",
+    "img": "https://ld-wt73.template-help.com/tf/strategytech/images/team-member-03-390x487.jpg"
+  },
+  {
+    "_id": 4,
+    "name": "WENDY LANE",
+    "position": "Managing director",
+    "img": "https://ld-wt73.template-help.com/tf/strategytech/images/team-member-04-390x487.jpg"
+  },
+  {
+    "_id": 5,
+    "name": "EVAN HAWKINS",
+    "position": "Business analyst",
+    "img": "https://ld-wt73.template-help.com/tf/strategytech/images/team-member-05-390x487.jpg"
+  },
+  {
+    "_id": 6,
+    "name": "BESSIE MCCOY",
+    "position": "SVP of engineering",
+    "img": "https://ld-wt73.template-help.com/tf/strategytech/images/team-member-06-390x487.jpg"
+  }
+]

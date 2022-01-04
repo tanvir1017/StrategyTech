@@ -4,6 +4,8 @@ import about from "../../images/bg-02.jpg";
 import reply from "../../images/reply.jpg";
 import sender from "../../images/sender.jpg";
 import watch from "../../images/time.png";
+import Footer from "../Footer/Footer";
+import OurProfessional from "../OurProfessional/OurProfessional";
 import "./AboutUs.css";
 
 const AboutUs = () => {
@@ -118,6 +120,13 @@ const AboutUs = () => {
         </div>
       </div>
       {/* join facts and figure */}
+
+      {/* Our Professional */}
+      <OurProfessional />
+      {/* Our Professional */}
+      {/* footer */}
+      <Footer />
+      {/* footer */}
     </>
   );
 };
