@@ -12,7 +12,7 @@ const MyOrderCard = ({ order, setNum }) => {
 
   //handle delete
   const handleDelete = id => {
-    fetch(`http://localhost:5000/users/${id}`, {
+    fetch(`https://enigmatic-fjord-94198.herokuapp.com/users/${id}`, {
       method: 'DELETE'
     })
       .then(res => res.json())
