@@ -6,6 +6,8 @@ import MyOrderCard from "./MyOrderCard";
 const MyOrder = () => {
   const [orders, setOrders] = useState([]);
   const { user } = useAuth();
+  const [num, setNum] = useState(0);
+
   useEffect(() => {
     const order = async () => {
       const res = await fetch(
@@ -13,16 +15,19 @@ const MyOrder = () => {
       );
       const data = await res.json();
       setOrders(data);
-      console.log(data);
     };
     order();
-  }, [user.email]);
+  }, [user.email, num]);
 
   return (
     <div className="container">
       <div className="row">
         {orders.map((order) => (
-          <MyOrderCard key={order._id} order={order} />
+          <MyOrderCard
+            key={order._id}
+            order={order}
+            setNum={setNum}
+          />
         ))}
       </div>
     </div>

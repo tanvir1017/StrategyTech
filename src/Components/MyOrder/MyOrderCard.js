@@ -1,14 +1,29 @@
 import React from "react";
-import quize from "../../images/quize.png";
 import Delete from "../../images/delete.png";
-import video from "../../images/video.png";
-import Questions from "../../images/qestion.png";
 import Pending from "../../images/pending.png";
 import project from "../../images/project.png";
+import Questions from "../../images/qestion.png";
+import quize from "../../images/quize.png";
+import video from "../../images/video.png";
 import "./MyOrder.css";
 
-const MyOrderCard = ({ order }) => {
-  const { img, name } = order;
+const MyOrderCard = ({ order, setNum }) => {
+  const { img, name, _id } = order;
+
+  //handle delete
+  const handleDelete = id => {
+    fetch(`http://localhost:5000/users/${id}`, {
+      method: 'DELETE'
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (data.deletedCount) {
+          alert('Successfully delete')
+          setNum(prev => prev + 1)
+        }
+      })
+  }
+
   return (
     <div className="col-lg-4 col-md-4 col-12">
       <div className="order_card_wrapper mb-3 ">
@@ -20,7 +35,7 @@ const MyOrderCard = ({ order }) => {
         <div className="order_card_body mt-1 text-start">
           <div className="d-flex justify-content-between align-items-center ">
             <p className="order_course_title mb-0">{name}</p>
-            <div>
+            <div onClick={() => handleDelete(_id)}>
               <img src={Delete} className="order_details_img" alt="" />
               <button className="btn">Delete</button>
             </div>
