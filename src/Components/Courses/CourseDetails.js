@@ -55,7 +55,7 @@ const CourseDetails = () => {
           <div className="row ">
             <div className="col-lg-7 col-md-7 col-sm-12   instructor_intro_and_course_details text-start">
               <div className="course_intro">
-                <p>{course.course_subjects}</p>
+                <p>{course.course_subject}</p>
                 <small>{course.course_title}</small>
               </div>
               <div className="instructor_intro">
@@ -67,11 +67,8 @@ const CourseDetails = () => {
                     alt=""
                   />
                   <div className="instructor_bio">
-                    <p>Ariana Grande</p>
-                    <small>
-                      MS (CSE), University of Oxford (UK); BA, MA (CSE),
-                      University of BarmingHam;
-                    </small>
+                    <p>{course.instructor_name}</p>
+                    <small>{course.instructor_education}</small>
                   </div>
                 </div>
               </div>
@@ -97,14 +94,14 @@ const CourseDetails = () => {
                     <img src={users} alt="" />
                     <div className="user_about">
                       <p>Total Enroll</p>
-                      <small>16,138</small>
+                      <small>{course.course_enroll}</small>
                     </div>
                   </div>
                   <div className="course_enroll d-flex text-start">
                     <img src={time} alt="" />
                     <div className="user_about">
                       <p>Hard work needed</p>
-                      <small>{course.course_duration}</small>
+                      <small>{course.course_durations}</small>
                     </div>
                   </div>
                 </div>
@@ -127,7 +124,7 @@ const CourseDetails = () => {
                           alt=""
                         />
                         <span className="ms-2 fw-bold">
-                          {course.course_quiz}+ Quizes
+                          {course.course_quizes}+ Quizes
                         </span>
                       </div>
                     </div>
@@ -147,7 +144,7 @@ const CourseDetails = () => {
                           alt=""
                         />
                         <span className="ms-2 fw-bold">
-                          {course.course_video}+ Videos
+                          {course.course_videos} Videos
                         </span>
                       </div>
                     </div>
@@ -168,7 +165,9 @@ const CourseDetails = () => {
                           src={mark}
                           alt=""
                         />
-                        <span className="ms-2 fw-bold">1k+ Questions</span>
+                        <span className="ms-2 fw-bold">
+                          {course.course_questions}Questions
+                        </span>
                       </div>
                     </div>
                     <div className=" col-lg-6 col-md-6 col-12 mt-2">
@@ -214,29 +213,7 @@ const CourseDetails = () => {
         <div className="course_description container text-start">
           <p>Course Description</p>
           <hr />
-          <small>
-            Do you want to see your child Code fluently in the classroom? Or do
-            you just want to take your little one a step further in the future?
-            If your answer is yes then this course is for you. Spoken Code plays
-            a very important role in academic life in classroom or co-curricular
-            activities, which also affects college and job applications. In
-            everyday life, talking to foreigners, traveling or going abroad to
-            study, in each case, the need to Code with confidence is much
-            greater. If you want your youngest member of the family to succeed
-            in life in the future with his or her ability to communicate in
-            Code, this course is for those young people. With a keen sense of
-            humor, excellent educational qualifications and many years of
-            teaching experience, Munjerin Shahid will serve as an ideal teacher
-            to enhance your child's spoken Code skills. In this course Munjerin
-            Shahid's Guidance promises to help your child overcome the fear of
-            ing Code and help him to Code fluently more easily. The course
-            contains 35 fun videos so that the little ones can have fun. There
-            are also 35 flashcards that will help you remember previous lessons,
-            35 interactive quizzes that will help you understand their progress,
-            and 35 notes that will keep a record of what they read. So enroll in
-            the course today to help your little girl take a step forward in
-            learning to Code fluently and confidently.
-          </small>
+          <small>{course.course_description}</small>
         </div>
       </div>
       <Footer></Footer>
