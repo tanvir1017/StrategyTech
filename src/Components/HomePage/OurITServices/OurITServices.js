@@ -1,8 +1,15 @@
-import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import React, { useState } from "react";
 import "../Header.css";
+import { filteringData } from "./data";
+import Emergancy from "./NestedRoute/Emergancy";
 
 const OurITServices = () => {
+  const [text, setText] = useState("one");
+  const [bText, setBText] = useState(1);
+  const handleButton = (tag, num) => {
+    setText(tag);
+    setBText(num);
+  };
   return (
     <div className="container">
       <div className="row nested_route">
@@ -18,14 +25,65 @@ const OurITServices = () => {
           </p>
         </div>
         <div className="col-lg-5 col-md-5 col-12 what_we_offer_nested_route ">
-          <Link to="/home/e_support">Emergency support</Link>
-          <Link to="/home/r_o_support">Remote office support</Link>
-          <Link to="/home/e_support">Network administrator</Link>
-          <Link to="/home/r_o_support">Office systems</Link>
-          <Link to="/home/e_support">Cloud configuration</Link>
+          <ul>
+            <li
+              onClick={() => handleButton("one", 1)}
+              className={`${
+                bText === 1 ? "activeLi" : "what_we_offer_nested_route_li"
+              }`}
+            >
+              <button className={`li_button ${bText === 1 && "text-light"}`}>
+                Emergency support
+              </button>
+            </li>
+            <li
+              onClick={() => handleButton("two", 2)}
+              className={`${
+                bText === 2 ? "activeLi" : "what_we_offer_nested_route_li"
+              }`}
+            >
+              <button className={`li_button ${bText === 2 && "text-light"}`}>
+                Remote office support
+              </button>
+            </li>
+            <li
+              onClick={() => handleButton("one", 3)}
+              className={`${
+                bText === 3 ? "activeLi" : "what_we_offer_nested_route_li"
+              }`}
+            >
+              <button className={`li_button ${bText === 3 && "text-light"}`}>
+                Network administrator
+              </button>
+            </li>
+            <li
+              onClick={() => handleButton("two", 4)}
+              className={`${
+                bText === 4 ? "activeLi" : "what_we_offer_nested_route_li"
+              }`}
+            >
+              <button className={`li_button ${bText === 4 && "text-light"}`}>
+                Office systems
+              </button>
+            </li>
+            <li
+              onClick={() => handleButton("one", 5)}
+              className={`${
+                bText === 5 ? "activeLi" : "what_we_offer_nested_route_li"
+              }`}
+            >
+              <button className={`li_button ${bText === 5 && "text-light"}`}>
+                Cloud configuration
+              </button>
+            </li>
+          </ul>
         </div>
         <div className="col-lg-7 col-md-7 col-12 ">
-          <Outlet></Outlet>
+          {filteringData
+            .filter((data) => data.tag === text)
+            .map((data) => (
+              <Emergancy key={data.tag} data={data} />
+            ))}
         </div>
       </div>
     </div>

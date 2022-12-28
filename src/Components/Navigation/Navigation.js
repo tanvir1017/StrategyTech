@@ -6,6 +6,7 @@ import useAuth from "../hooks/useAuth";
 
 const Navigation = () => {
   const { user, logOut } = useAuth();
+  console.log(user.photoURL);
   return (
     <>
       {/* new nav */}
@@ -26,33 +27,31 @@ const Navigation = () => {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link className="nav-link active" to="/">
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/courses">
-                  Courses
-                </Link>
-              </li>{" "}
+
               <li className="nav-item">
                 <Link className="nav-link active" to="/about_us">
                   About us
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/myorders">
-                  My Order
-                </Link>
-              </li>
+
               <li className="nav-item">
                 {user?.email ? (
-                  <div style={{ display: "flex" }}>
-                    <p className="nav-link active ">
-                      <i className="fas fa-user"></i> {user.displayName}
-                    </p>
+                  <div className="d-flex justify-content-center alight-items-center">
+                    <p className="nav-link active ">{user.displayName}</p>
+                    <div>
+                      <img
+                        className="user_img"
+                        style={{ width: "40%", borderRadius: "60%" }}
+                        src={user?.photoURL}
+                        alt={user.displayName}
+                      />
+                    </div>
                     <p
                       className="nav-link active"
                       style={{ cursor: "pointer" }}

@@ -10,7 +10,6 @@ import CourseDetails from "./Components/Courses/CourseDetails";
 import Courses from "./Components/Courses/Courses";
 import HomePage from "./Components/HomePage/Header";
 import Emergancy from "./Components/HomePage/OurITServices/NestedRoute/Emergancy";
-import RemoteOfficeSupport from "./Components/HomePage/OurITServices/NestedRoute/RemoteOfficeSupport";
 import OurITServices from "./Components/HomePage/OurITServices/OurITServices";
 import MyOrder from "./Components/MyOrder/MyOrder";
 import Navigation from "./Components/Navigation/Navigation";
@@ -27,10 +26,6 @@ function App() {
             <Route exact path="/" element={<HomePage />}></Route>
             <Route path="/home" element={<HomePage />}>
               <Route path="/home/e_support" element={<Emergancy />}></Route>
-              <Route
-                path="/home/r_o_support"
-                element={<RemoteOfficeSupport />}
-              ></Route>
             </Route>
             <Route path="/courses" element={<Courses />}></Route>
             <Route
